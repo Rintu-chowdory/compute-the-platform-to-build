@@ -5,34 +5,29 @@ import { useEffect, useRef } from "react";
 
 const footerLinks = {
   Product: [
-    { name: "Agent capabilities", href: "#features" },
-    { name: "How it works", href: "#how-it-works" },
+    { name: "Capabilities", href: "#features" },
+    { name: "Process", href: "#how-it-works" },
+    { name: "Pipeline", href: "#infra" },
     { name: "Pricing", href: "#pricing" },
     { name: "Integrations", href: "#integrations" },
   ],
-  Developers: [
-    { name: "Documentation", href: "#developers" },
-    { name: "Agent SDK", href: "#" },
-    { name: "API Reference", href: "#developers" },
-    { name: "Status", href: "#" },
+  Project: [
+    { name: "Live demo", href: "https://rintu-chowdory.github.io/leadflowai/", badge: "New" },
+    { name: "Login", href: "https://rintu-chowdory.github.io/leadflowai/login" },
+    { name: "Portfolio", href: "https://rintu-chowdory.github.io/DevopsWorksflow/" },
+    { name: "GitHub", href: "https://github.com/Rintu-chowdory" },
   ],
-  Company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Careers", href: "#", badge: "Hiring" },
-    { name: "Contact", href: "#" },
-  ],
-  Legal: [
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
+  Contact: [
+    { name: "Email", href: "mailto:chowdorydevops@gmail.com" },
+    { name: "Early access", href: "mailto:chowdorydevops@gmail.com?subject=LeadFlowAI%20early%20access" },
     { name: "Security", href: "#security" },
   ],
 };
 
 const socialLinks = [
-  { name: "Twitter", href: "#" },
-  { name: "GitHub", href: "#" },
-  { name: "LinkedIn", href: "#" },
+  { name: "GitHub", href: "https://github.com/Rintu-chowdory" },
+  { name: "Portfolio", href: "https://rintu-chowdory.github.io/DevopsWorksflow/" },
+  { name: "Email", href: "mailto:chowdorydevops@gmail.com" },
 ];
 
 function AnimatedWaveCanvas() {
@@ -114,13 +109,12 @@ export function FooterSection() {
           <div className="grid grid-cols-2 md:grid-cols-6 gap-12 lg:gap-8">
             {/* Brand Column */}
             <div className="col-span-2">
-              <a href="#" className="inline-flex items-center gap-2 mb-6">
-                <span className="text-2xl font-display text-white">COMPUTE</span>
-                <span className="text-xs text-white/40 font-mono">TM</span>
+              <a href="#top" className="inline-flex items-center gap-2 mb-6">
+                <span className="text-2xl font-display text-white">LeadFlowAI</span>
               </a>
 
               <p className="text-white/50 leading-relaxed mb-8 max-w-xs text-sm">
-                Autonomous AI agents for distributed computing. Delegate complex tasks to intelligent workers.
+                AI lead generation for small businesses. Capture, qualify, and convert - automatically.
               </p>
 
               {/* Social Links */}
@@ -167,13 +161,13 @@ export function FooterSection() {
         {/* Bottom Bar */}
         <div className="py-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/30">
-            &copy; 2025 COMPUTE. All rights reserved.
+            &copy; 2026 Rintu Chowdory &middot; Baesweiler
           </p>
 
           <div className="flex items-center gap-4 text-sm text-white/30">
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#eca8d6]" />
-              All agents operational
+              Demo live today
             </span>
           </div>
         </div>

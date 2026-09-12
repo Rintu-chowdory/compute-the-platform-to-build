@@ -5,27 +5,27 @@ import { useEffect, useRef, useState } from "react";
 const features = [
   {
     number: "01",
-    title: "Autonomous Execution",
-    description: "Deploy AI agents that work independently. They analyze, decide, and execute complex multi-step tasks without human intervention.",
-    stats: { value: "99.7%", label: "task completion" },
+    title: "AI Lead Capture",
+    description: "Capture website visitors 24/7 with smart interactive forms and intelligent chat widgets. Turn anonymous traffic into qualified contacts.",
+    stats: { value: "24/7", label: "always-on capture" },
   },
   {
     number: "02",
-    title: "Distributed Computing",
-    description: "Offload compute-heavy tasks to our global network. Your agents run on optimized infrastructure across 50+ regions worldwide.",
-    stats: { value: "50+", label: "global regions" },
+    title: "Smart Qualification",
+    description: "AI scores every incoming prospect automatically based on business intent, budget signals, and fit so you prioritize high-value leads.",
+    stats: { value: "AI", label: "lead scoring" },
   },
   {
     number: "03",
-    title: "Multi-Agent Orchestration",
-    description: "Coordinate teams of specialized agents. They communicate, delegate, and collaborate to solve complex problems together.",
-    stats: { value: "1000x", label: "parallel execution" },
+    title: "Data Enrichment",
+    description: "Instantly auto-complete contact details, company profiles, and background information to give your sales flow complete context.",
+    stats: { value: "100%", label: "profile context" },
   },
   {
     number: "04",
-    title: "Secure Sandboxing",
-    description: "Each agent runs in isolated environments. Full audit trails, encrypted execution, and zero data leakage between tasks.",
-    stats: { value: "0", label: "data breaches" },
+    title: "Automated Follow-up",
+    description: "Engage leads instantly with personalized email sequences so no prospect ever goes cold or gets forgotten.",
+    stats: { value: "Instant", label: "automated outreach" },
   },
 ];
 
@@ -167,14 +167,14 @@ export function FeaturesSection() {
               >
                 Intelligent
                 <br />
-                <span className="text-muted-foreground">workers.</span>
+                <span className="text-muted-foreground">lead engine.</span>
               </h2>
             </div>
             <div className="lg:col-span-5 lg:pb-4">
               <p className={`text-xl text-muted-foreground leading-relaxed transition-all duration-1000 delay-200 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}>
-                Deploy autonomous AI agents that execute complex tasks across distributed infrastructure. No supervision required.
+                Deploy an intelligent AI lead engine that captures, qualifies, and enriches website visitors in real time.
               </p>
             </div>
           </div>

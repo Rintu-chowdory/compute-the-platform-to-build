@@ -4,20 +4,20 @@ import { useState, useEffect, useRef } from "react";
 
 const features = [
   { 
-    title: "TypeScript native", 
-    description: "Full type safety for agent configs and responses."
+    title: "React + Vite frontend", 
+    description: "A fast, lightweight app that loads in under a second."
   },
   { 
-    title: "Streaming results", 
-    description: "Watch your agents think and act in real-time."
+    title: "AI-powered qualification", 
+    description: "Every lead is scored and enriched automatically."
   },
   { 
-    title: "Multi-model support", 
-    description: "OpenAI, Anthropic, Mistral, or bring your own."
+    title: "OAuth sign-in options", 
+    description: "Google, LinkedIn, GitHub, or Microsoft accounts."
   },
   { 
-    title: "Local debugging", 
-    description: "Test agents locally before deploying to cloud."
+    title: "Live demo on GitHub Pages", 
+    description: "Try the product today - no signup walls, no waiting."
   },
 ];
 
@@ -68,12 +68,12 @@ export function DevelopersSection() {
         >
           <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
             <span className="w-8 h-px bg-foreground/30" />
-            Developer SDK
+            Built with modern tech
           </span>
           <h2 className="text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9]">
-            Code your agents.
+            Modern stack.
             <br />
-            <span className="text-muted-foreground">Or let them code.</span>
+            <span className="text-muted-foreground">Zero legacy.</span>
           </h2>
         </div>
 
@@ -84,8 +84,8 @@ export function DevelopersSection() {
           }`}
         >
           <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-md">
-            A powerful SDK for building, deploying, and orchestrating AI agents. 
-            Define behaviors in code or natural language.
+            LeadFlowAI is built on a fast, modern stack - a React + Vite frontend, 
+            AI-powered lead qualification, and OAuth sign-in. The live demo runs on GitHub Pages today.
           </p>
           <div className="grid grid-cols-2 gap-6">
             {features.map((feature, index) => (

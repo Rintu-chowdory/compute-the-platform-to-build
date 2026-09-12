@@ -5,50 +5,48 @@ import { ArrowRight, Check, Zap } from "lucide-react";
 
 const plans = [
   {
-    name: "Explorer",
-    description: "For tinkering and small automations",
+    name: "Demo",
+    description: "Try everything, risk-free",
     price: { monthly: 0, annual: 0 },
     features: [
-      "3 concurrent agents",
-      "1,000 tasks/month",
-      "Community support",
-      "Basic logging",
-      "Public integrations",
+      "Lead capture forms",
+      "AI lead qualification",
+      "Automated follow-up",
+      "Data export",
+      "No credit card required",
     ],
-    cta: "Start free",
+    cta: "Try the demo",
+    href: "https://rintu-chowdory.github.io/leadflowai/",
     highlight: false,
   },
   {
-    name: "Builder",
-    description: "For teams shipping with agents",
-    price: { monthly: 79, annual: 65 },
+    name: "Early Access",
+    description: "For early believers shaping the product",
+    price: { monthly: 0, annual: 0 },
     features: [
-      "25 concurrent agents",
-      "50,000 tasks/month",
-      "Priority support",
-      "Full audit trails",
-      "Private integrations",
-      "Team workspaces",
-      "Custom agent roles",
+      "Everything in Demo",
+      "Full product access",
+      "Direct founder support",
+      "Feedback calls",
+      "Priority feature requests",
     ],
-    cta: "Start trial",
+    cta: "Join early access",
+    href: "mailto:chowdorydevops@gmail.com?subject=LeadFlowAI%20early%20access",
     highlight: true,
   },
   {
-    name: "Scale",
-    description: "For agent-first organizations",
+    name: "Custom",
+    description: "For teams with specific needs",
     price: { monthly: null, annual: null },
     features: [
-      "Unlimited agents",
-      "Unlimited tasks",
-      "24/7 dedicated support",
-      "On-premise deployment",
-      "SLA guarantee",
-      "Custom LLM routing",
-      "Advanced security",
-      "Dedicated compute",
+      "Custom integrations",
+      "Multi-seat access",
+      "Onboarding support",
+      "Data residency options",
+      "SLA discussion",
     ],
-    cta: "Contact sales",
+    cta: "Contact me",
+    href: "mailto:chowdorydevops@gmail.com?subject=LeadFlowAI%20custom",
     highlight: false,
   },
 ];
@@ -83,9 +81,9 @@ export function PricingSection() {
             <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              Pay for
+              Honest
               <br />
-              <span className="text-stroke">results.</span>
+              <span className="text-stroke">pricing.</span>
             </h2>
           </div>
           
@@ -96,7 +94,7 @@ export function PricingSection() {
             }`}>
               <img
                 src="/images/whale.png"
-                alt="Organic whale"
+                alt="Abstract wave art"
                 className="w-full h-full object-contain object-center"
               />
             </div>
@@ -167,7 +165,8 @@ export function PricingSection() {
                   </ul>
 
                   {/* CTA */}
-                  <button
+                  <a
+                    href={plan.href}
                     className={`w-full py-4 flex items-center justify-center gap-2 text-sm font-medium transition-all group ${
                       plan.highlight
                         ? "bg-foreground text-background hover:bg-foreground/90"
@@ -176,7 +175,7 @@ export function PricingSection() {
                   >
                     {plan.cta}
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                  </button>
+                  </a>
                 </div>
               </div>
             ))}
@@ -190,19 +189,19 @@ export function PricingSection() {
           <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
             <span className="flex items-center gap-2">
               <Check className="w-4 h-4 text-[#eca8d6]" />
-              Encrypted execution
+              Encrypted lead data
             </span>
             <span className="flex items-center gap-2">
               <Check className="w-4 h-4 text-[#eca8d6]" />
-              Full audit logs
+              GDPR-aware handling
             </span>
             <span className="flex items-center gap-2">
               <Check className="w-4 h-4 text-[#eca8d6]" />
-              Multi-model routing
+              Export anytime
             </span>
           </div>
-          <a href="#" className="text-sm underline underline-offset-4 hover:text-foreground transition-colors">
-            Compare all features
+          <a href="mailto:chowdorydevops@gmail.com" className="text-sm underline underline-offset-4 hover:text-foreground transition-colors">
+            Questions? Email me
           </a>
         </div>
       </div>

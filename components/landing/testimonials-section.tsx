@@ -5,31 +5,31 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Our agents handle 80% of our customer support tickets autonomously. The ROI was immediate.",
-    author: "Sarah Chen",
-    role: "CTO",
-    company: "Meridian Labs",
+    quote: "No lead left cold. Every visitor is captured, qualified, and followed up with - automatically.",
+    author: "The product",
+    role: "Principle 01",
+    company: "Capture",
     metric: { value: "80%", label: "Ticket resolution" },
   },
   {
-    quote: "We deployed research agents that work 24/7. They surface insights we'd never find manually.",
+    quote: "Built for small businesses. No marketing team, no agency retainer, no spreadsheets required.",
     author: "Marcus Webb",
-    role: "Head of Research",
-    company: "Flux Systems",
+    role: "Principle 02",
+    company: "Simplicity",
     metric: { value: "10x", label: "Research output" },
   },
   {
-    quote: "The multi-agent orchestration is incredible. Complex workflows that took weeks now run in hours.",
+    quote: "GDPR-aware by design. Your lead data stays encrypted, exportable, and under your control.",
     author: "Elena Rodriguez",
-    role: "VP Engineering",
-    company: "Beacon AI",
+    role: "Principle 03",
+    company: "Trust",
     metric: { value: "40x", label: "Faster workflows" },
   },
   {
-    quote: "Security was our biggest concern. The sandboxing and audit trails gave us full confidence.",
+    quote: "Try it before you trust it. The live demo is up today - one click, no credit card.",
     author: "James Liu",
-    role: "CISO",
-    company: "Prism Analytics",
+    role: "Principle 04",
+    company: "Transparency",
     metric: { value: "0", label: "Security incidents" },
   },
 ];
@@ -94,13 +94,13 @@ export function TestimonialsSection() {
           <div>
             <span className="inline-flex items-center gap-3 text-sm font-mono text-background/40 mb-4">
               <span className="w-12 h-px bg-background/20" />
-              Testimonials
+              Why LeadFlowAI
             </span>
             <h2 className={`text-4xl lg:text-5xl font-display transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}>
-              Trusted by teams
-              <span className="text-background/40"> worldwide.</span>
+              Why it
+              <span className="text-background/40"> exists.</span>
             </h2>
           </div>
           

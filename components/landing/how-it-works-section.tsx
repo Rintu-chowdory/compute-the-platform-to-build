@@ -5,39 +5,36 @@ import { useEffect, useRef, useState } from "react";
 const steps = [
   {
     number: "01",
-    title: "Define",
-    subtitle: "your agent",
-    description: "Describe what your agent should do. Set its capabilities, constraints, and goals in natural language or code.",
-    code: `const researcher = new Agent({
-  role: 'Research Analyst',
-  capabilities: ['web', 'docs', 'api'],
-  memory: true,
-  autonomy: 'full'
+    title: "Capture",
+    subtitle: "visitor info",
+    description: "Capture website visitors 24/7 using smart interactive forms and chat widgets embedded directly on your site.",
+    code: `const lead = await leadflow.capture({
+  channel: 'website',
+  widget: 'interactive-chat',
+  mode: '24/7'
 })`,
   },
   {
     number: "02",
-    title: "Assign",
-    subtitle: "the task",
-    description: "Give your agent a mission. It breaks down complex tasks into steps and executes them autonomously.",
-    code: `await researcher.execute({
-  task: 'Analyze competitor pricing',
-  sources: ['public-data', 'news'],
-  output: 'structured-report',
-  deadline: '2h'
+    title: "Qualify",
+    subtitle: "& enrich data",
+    description: "AI scores prospect intent automatically and enriches contact and company details in seconds.",
+    code: `const qualified = await leadflow.qualify({
+  lead,
+  enrichment: ['company', 'role'],
+  scoring: 'auto'
 })`,
   },
   {
     number: "03",
-    title: "Monitor",
-    subtitle: "& scale",
-    description: "Track progress in real-time. Spin up more agents as needed. Pay only for compute used.",
-    code: `optimus.dashboard({
-  agents: [researcher],
-  metrics: ['tasks', 'latency', 'cost'],
+    title: "Convert",
+    subtitle: "with follow-up",
+    description: "Trigger personalized email sequences and notifications instantly so no lead ever goes cold.",
+    code: `await leadflow.sequence({
+  to: qualified.email,
+  template: 'instant-follow-up',
   alerts: true
-})
-// 847 tasks completed today`,
+})`,
   },
 ];
 
@@ -88,9 +85,9 @@ export function HowItWorksSection() {
             <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.85] transition-all duration-1000 delay-100 ${
               isVisible ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"
             }`}>
-              <span className="block">Define.</span>
-              <span className="block text-white/30">Deploy.</span>
-              <span className="block text-white/10">Scale.</span>
+              <span className="block">Capture.</span>
+              <span className="block text-white/30">Qualify.</span>
+              <span className="block text-white/10">Convert.</span>
             </h2>
           </div>
 

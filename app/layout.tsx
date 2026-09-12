@@ -21,9 +21,10 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'COMPUTE - AI Agents for Distributed Computing',
-  description: 'Deploy autonomous AI agents on distributed infrastructure. Offload complex tasks to intelligent workers that run 24/7.',
+  title: 'LeadFlowAI — AI Lead Generation for Small Businesses',
+  description: 'LeadFlowAI captures, qualifies, and follows up on your leads automatically — so no visitor goes cold. Try the live demo.',
   generator: 'v0.app',
+  icons: { icon: '/icon.svg' },
 }
 
 export default function RootLayout({

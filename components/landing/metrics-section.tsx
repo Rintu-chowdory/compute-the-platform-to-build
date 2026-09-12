@@ -4,25 +4,25 @@ import { useEffect, useState, useRef } from "react";
 
 const metrics = [
   { 
-    value: 12847392, 
-    suffix: "", 
+    value: 24, 
+    suffix: "/7", 
     prefix: "",
-    label: "Tasks completed today",
-    sublabel: "by 23,847 active agents",
+    label: "Leads captured (demo)",
+    sublabel: "automated visitor pipeline",
   },
   { 
-    value: 99, 
-    suffix: ".99%", 
+    value: 98, 
+    suffix: "%", 
     prefix: "",
-    label: "Availability",
-    sublabel: "across all regions",
+    label: "Qualification score (demo)",
+    sublabel: "AI lead scoring model",
   },
   { 
-    value: 340, 
-    suffix: "ms", 
-    prefix: "<",
-    label: "Average execution",
-    sublabel: "p99 latency",
+    value: 100, 
+    suffix: "%", 
+    prefix: "",
+    label: "Automated follow-up (demo)",
+    sublabel: "instant response sequence",
   },
 ];
 
@@ -261,7 +261,7 @@ export function MetricsSection() {
             }`}>
               Real-time
               <br />
-              <span className="text-muted-foreground">agent metrics.</span>
+              <span className="text-muted-foreground">lead metrics (demo).</span>
             </h2>
           </div>
         </div>
